@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RadioButton
+            android:id="@+id/radLost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perdu un objet"/>
+
+
+        <RadioButton
+            android:id="@+id/radMauvaise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mauvaise conduite"/>
+
+        <RadioButton
+            android:id="@+id/radPrix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prix plus élevé que prévu"/>
+
+
+        <RadioButton
+            android:id="@+id/radOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Autre"/>
+    </RadioGroup>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/txtCause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cause"
+            android:imeActionId="6"
+
+            android:inputType="text"
+
+            android:singleLine="false" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</LinearLayout>
+</ScrollView>
